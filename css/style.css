@@ -18,6 +18,16 @@ body {
     color: #FFFFFF;
 }
 
+.black-h1 {
+    font-family: Epilogue, sans-serif;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: -2px;
+    text-align: left;
+    color: #391400;
+}
+
 .white-h2 {
     font-family: Epilogue, sans-serif;
     font-style: normal;
@@ -33,6 +43,16 @@ body {
     color: #FFFFFF;
 }
 
+.black-h2 {
+    font-family: Epilogue;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #391400;
+}
+
 .white-h3 {
     font-family: Epilogue, sans-serif;
     font-style: normal;
@@ -40,6 +60,18 @@ body {
     font-size: 40px;
     line-height: 48px;
     color: #FFFFFF;
+}
+
+.black-h3 {
+    font-family: Epilogue, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #391400;
+    margin-top: 17px;
+    margin-bottom: 28px;
 }
 
 .white-h4 {
@@ -81,6 +113,16 @@ body {
     color: #EF6D58;
 }
 
+.text-small {
+    font-family: Epilogue, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+    opacity: 64%;
+}
+
 .light-text {
     font-family: Epilogue, sans-serif;
     font-style: normal;
@@ -99,13 +141,33 @@ body {
     color: #FFFFFF;
 }
 
-.black-text {
+.text-big-black {
+    font-family: Epilogue, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.text-dark-grey {
     font-family: Epilogue, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 32px;
     color: rgba(57, 20, 0, 0.64);
+    opacity: 64%;
+}
+
+.text-dark {
+    font-family: Epilogue, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #391400;
 }
 /*text styles*/
 
@@ -244,21 +306,29 @@ body {
     height: 286px;
     background: #FFFFFF;
     box-shadow: 0px 32px 64px rgba(0, 2, 43, 0.0414968);
-    border-radius: 6px 6px 0px 6px;
+    border: 1px solid #F3D1BF;
+}
+
+.card-radius-left {
+    border-radius: 6px 0px 0px 6px;
+}
+
+.card-radius-right {
+    border-radius: 0px 6px 6px 0px;
 }
 
 .white-bg-card p {
-    margin: 0px;
+    margin-bottom: 26px;
 }
 
 .white-bg-card h4 {
     margin-bottom: 19px;
+
 }
 
 .border-card {
     border: 1px solid #3A3C56;
     box-sizing: border-box;
-    border-radius: 0px 6px 6px 0px;
     height: 272px;
     padding: 105px 48px 48px 48px;
 }
@@ -291,6 +361,8 @@ body {
 
 .cards {
     display: flex;
+    top: 125px;
+    position: relative;
 }
 
 .cards .white-bg-card {
@@ -303,5 +375,70 @@ body {
 
 .cream-bg {
     background-color: #FDF0E9;
-    height: 500px;
+    height: 2000px;
+    padding: 0 135px 0 135px;
+}
+
+.video-container {
+    padding-top: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.achievements {
+    display: flex;
+    justify-content: center;
+    margin-top: 135px;
+}
+
+.hollow-card {
+    border: 1px solid #3A3C56;
+    width: 391px;
+    height: 176px;
+    padding-left: 45px;
+}
+
+.work-title {
+    margin-top: 118px;
+}
+
+.hollow-card h3 {
+    margin: 48px 0 13px 0px;
+}
+
+.work-info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #F3D1BF;
+}
+
+.info-line {
+    display: flex;
+    align-items: center;
+}
+.info-line h1 {
+    margin-right: 66px;
+}
+
+.portfolio-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-header .black-h2 {
+    margin-top: -6px;
+}
+
+.portfolio-links {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+}
+
+
+.upper-text {
+    position: relative;
+    bottom: 5px;
+    left: 1px;
 }
