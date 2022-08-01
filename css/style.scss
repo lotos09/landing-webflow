@@ -203,9 +203,18 @@ $breakpoint-tablet: 985px;
 
 /*header*/
 .header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   padding-top: 16px;
+  height: 55px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  span {
+    margin-left: 14px;
+  }
 }
 
 .links {
@@ -231,12 +240,20 @@ $breakpoint-tablet: 985px;
 
   color: #FFFFFF;
 }
+
+#burger {
+  display: none;
+}
+
 @media (max-width: $breakpoint-tablet) {
   .links {
     display: none;
   }
   #contact-button {
     display: none;
+  }
+  #burger {
+    display: block;
   }
 }
 

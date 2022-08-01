@@ -189,9 +189,18 @@ body {
 }
 /*header*/
 .header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   padding-top: 16px;
+  height: 55px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo span {
+  margin-left: 14px;
 }
 
 .links {
@@ -213,6 +222,10 @@ body {
   color: #FFFFFF;
 }
 
+#burger {
+  display: none;
+}
+
 @media (max-width: 985px) {
   .links {
     display: none;
@@ -220,6 +233,10 @@ body {
 
   #contact-button {
     display: none;
+  }
+
+  #burger {
+    display: block;
   }
 }
 .links a {
