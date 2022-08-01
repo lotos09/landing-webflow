@@ -199,6 +199,14 @@ $breakpoint-tablet: 985px;
   .light-background {
     padding: 0 23px;
   }
+  .white-h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .white-h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 /*header*/
@@ -290,11 +298,12 @@ $breakpoint-tablet: 985px;
   margin-top: 110px;
   border-bottom: 1px solid #3A3C56;
   justify-content: space-between;
+  flex-wrap: wrap-reverse;
 }
 
 #right-column img {
-  width: 570px;
-  height: 603px;
+  max-width: 570px;
+  max-height: 603px;
 }
 
 .solid-button {
@@ -321,6 +330,18 @@ $breakpoint-tablet: 985px;
   line-height: 32px;
   color: #FFFFFF;
   margin-left: 43px;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  #right-column {
+    text-align: center;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      height: unset;
+    }
+  }
 }
 
 /*first section*/
@@ -389,6 +410,19 @@ $breakpoint-tablet: 985px;
   margin: 0;
 }
 
+@media (max-width: $breakpoint-tablet) {
+  .second-section {
+    flex-wrap: wrap;
+
+    .right-col {
+      flex-wrap: wrap;
+    }
+  }
+  .white-bg-card {
+    width: 240px;
+  }
+}
+
 /*thirds section*/
 
 .third-section {
@@ -398,11 +432,28 @@ $breakpoint-tablet: 985px;
 
 .third-section img {
   margin-right: 134px;
+  max-height: 585px;
 }
 
 .third-section .solid-button {
   background-color: #B550F8;
   width: 170px;
+}
+
+.third-section .right-col {
+  width: 500px;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .third-section {
+    flex-wrap: wrap;
+
+    img {
+      max-width: 100%;
+      height: unset;
+      margin: 0 auto;
+    }
+  }
 }
 
 /*fourth section*/
@@ -415,11 +466,29 @@ $breakpoint-tablet: 985px;
   display: flex;
   top: 125px;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .cards .white-bg-card {
-  width: 391px;
+  width: 300px;
   height: 400px;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .cards {
+    justify-content: center;
+
+    .white-bg-card {
+      max-width: 300px;
+      width: 100%;
+    }
+    .card-radius-left {
+      border-radius: 6px 6px 0px 0px;
+    }
+    .card-radius-right {
+      border-radius: 0px 0px 6px 6px;
+    }
+  }
 }
 
 /*CREAM-BG*/
@@ -431,18 +500,21 @@ $breakpoint-tablet: 985px;
 .video-container {
   padding-top: 250px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .achievements {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 135px;
 }
 
 .hollow-card {
   border: 1px solid #3A3C56;
-  width: 391px;
+  width: 335px;
+  max-width: 400px;
   height: 176px;
   padding-left: 45px;
 }
@@ -457,6 +529,7 @@ $breakpoint-tablet: 985px;
 
 .work-info {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   border-bottom: 1px solid #F3D1BF;
 }
@@ -491,6 +564,43 @@ $breakpoint-tablet: 985px;
   position: relative;
   bottom: 5px;
   left: 1px;
+}
+
+.fifth-section {
+  .input {
+    display: none;
+    width: 329px;
+    height: 48px;
+    background-color: white;
+    border: 1px solid #F3D1BF;
+    border-radius: 6px;
+    padding: 7px 16px;
+    justify-content: space-between;
+
+    p {
+      margin: 0;
+      align-self: center;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .fifth-section {
+    .card-radius-left {
+      border-radius: 6px 6px 0px 0px;
+      border-bottom: none;
+    }
+    .card-radius-right {
+      border-radius: 0px 0px 6px 6px;
+      border-top: none;
+    }
+    .portfolio-links {
+      display: none;
+    }
+    .input {
+      display: flex;
+    }
+  }
 }
 
 //dark background and scss

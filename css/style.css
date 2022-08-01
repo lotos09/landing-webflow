@@ -186,6 +186,16 @@ body {
   .light-background {
     padding: 0 23px;
   }
+
+  .white-h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .white-h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 /*header*/
 .header {
@@ -271,11 +281,12 @@ body {
   margin-top: 110px;
   border-bottom: 1px solid #3A3C56;
   justify-content: space-between;
+  flex-wrap: wrap-reverse;
 }
 
 #right-column img {
-  width: 570px;
-  height: 603px;
+  max-width: 570px;
+  max-height: 603px;
 }
 
 .solid-button {
@@ -304,6 +315,16 @@ body {
   margin-left: 43px;
 }
 
+@media (max-width: 985px) {
+  #right-column {
+    text-align: center;
+    margin: 0 auto;
+  }
+  #right-column img {
+    width: 100%;
+    height: unset;
+  }
+}
 /*first section*/
 /*second section*/
 .second-section {
@@ -368,6 +389,18 @@ body {
   margin: 0;
 }
 
+@media (max-width: 985px) {
+  .second-section {
+    flex-wrap: wrap;
+  }
+  .second-section .right-col {
+    flex-wrap: wrap;
+  }
+
+  .white-bg-card {
+    width: 240px;
+  }
+}
 /*thirds section*/
 .third-section {
   display: flex;
@@ -376,6 +409,7 @@ body {
 
 .third-section img {
   margin-right: 134px;
+  max-height: 585px;
 }
 
 .third-section .solid-button {
@@ -383,6 +417,20 @@ body {
   width: 170px;
 }
 
+.third-section .right-col {
+  width: 500px;
+}
+
+@media (max-width: 985px) {
+  .third-section {
+    flex-wrap: wrap;
+  }
+  .third-section img {
+    max-width: 100%;
+    height: unset;
+    margin: 0 auto;
+  }
+}
 /*fourth section*/
 .fourth-section {
   margin-top: 142px;
@@ -392,13 +440,29 @@ body {
   display: flex;
   top: 125px;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .cards .white-bg-card {
-  width: 391px;
+  width: 300px;
   height: 400px;
 }
 
+@media (max-width: 985px) {
+  .cards {
+    justify-content: center;
+  }
+  .cards .white-bg-card {
+    max-width: 300px;
+    width: 100%;
+  }
+  .cards .card-radius-left {
+    border-radius: 6px 6px 0px 0px;
+  }
+  .cards .card-radius-right {
+    border-radius: 0px 0px 6px 6px;
+  }
+}
 /*CREAM-BG*/
 /*fifth section*/
 .fifth-section {
@@ -408,18 +472,21 @@ body {
 .video-container {
   padding-top: 250px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .achievements {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 135px;
 }
 
 .hollow-card {
   border: 1px solid #3A3C56;
-  width: 391px;
+  width: 335px;
+  max-width: 400px;
   height: 176px;
   padding-left: 45px;
 }
@@ -434,6 +501,7 @@ body {
 
 .work-info {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   border-bottom: 1px solid #F3D1BF;
 }
@@ -469,6 +537,37 @@ body {
   left: 1px;
 }
 
+.fifth-section .input {
+  display: none;
+  width: 329px;
+  height: 48px;
+  background-color: white;
+  border: 1px solid #F3D1BF;
+  border-radius: 6px;
+  padding: 7px 16px;
+  justify-content: space-between;
+}
+.fifth-section .input p {
+  margin: 0;
+  align-self: center;
+}
+
+@media (max-width: 985px) {
+  .fifth-section .card-radius-left {
+    border-radius: 6px 6px 0px 0px;
+    border-bottom: none;
+  }
+  .fifth-section .card-radius-right {
+    border-radius: 0px 0px 6px 6px;
+    border-top: none;
+  }
+  .fifth-section .portfolio-links {
+    display: none;
+  }
+  .fifth-section .input {
+    display: flex;
+  }
+}
 .tiles {
   display: flex;
   flex-direction: column;
