@@ -11,6 +11,8 @@ body {
   --text-light-gray: rgba(255, 255, 255, 0.64);
 }
 
+$breakpoint-tablet: 985px;
+
 /*text styles*/
 .white-h1 {
   font-family: Epilogue, sans-serif;
@@ -185,6 +187,19 @@ body {
   background-color: #28293E;
   padding: 0 130px;
 }
+.light-background {
+  background: #fdf0e9;
+  padding: 0 135px;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .dark-background {
+    padding: 0 23px;
+  }
+  .light-background {
+    padding: 0 23px;
+  }
+}
 
 /*header*/
 .header {
@@ -215,6 +230,14 @@ body {
   /* Text_Light */
 
   color: #FFFFFF;
+}
+@media (max-width: $breakpoint-tablet) {
+  .links {
+    display: none;
+  }
+  #contact-button {
+    display: none;
+  }
 }
 
 .links a {
@@ -384,11 +407,8 @@ body {
 
 /*CREAM-BG*/
 /*fifth section*/
-
-.cream-bg {
-  background-color: #FDF0E9;
-  height: 2100px;
-  padding: 0 135px 0 135px;
+.fifth-section {
+  padding-bottom: 200px;
 }
 
 .video-container {
@@ -633,13 +653,6 @@ body {
     margin-top: 65px;
   }
 }
-
-
-.light-background {
-  background: #fdf0e9;
-  padding: 0 135px;
-}
-
 
 .pricing {
   padding-top: 400px;
@@ -1067,7 +1080,10 @@ body {
   }
 }
 
-
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 
 
