@@ -567,6 +567,11 @@ body {
   .fifth-section .input {
     display: flex;
   }
+
+  .video-left img {
+    width: 100%;
+    height: auto;
+  }
 }
 .tiles {
   display: flex;

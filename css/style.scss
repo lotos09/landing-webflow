@@ -601,6 +601,12 @@ $breakpoint-tablet: 985px;
       display: flex;
     }
   }
+  .video-left {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 //dark background and scss
